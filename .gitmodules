@@ -1,3 +1,3 @@
-[submodule "lib/vendor/ElasticSearchClient"]
-	path = lib/vendor/ElasticSearchClient
-	url = git://github.com/jamespaulmuir/elasticsearch.git
+[submodule "lib/vendor/Elastica"]
+	path = lib/vendor/Elastica
+	url = https://github.com/ruflin/Elastica.git
