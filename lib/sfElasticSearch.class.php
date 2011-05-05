@@ -30,7 +30,9 @@ class sfElasticSearch
     public static function getInstance()
     {
         if(!self::$instance){
-            self::$instance = new Elastica_Client();
+            $host = sfConfig::get('app_elasticsearch_host', Elastica_Client::DEFAULT_HOST);
+            $port = sfConfig::get('app_elasticsearch_port', Elastica_Client::DEFAULT_PORT);
+            self::$instance = new Elastica_Client($host, $port);
         }
         return self::$instance;
     }
