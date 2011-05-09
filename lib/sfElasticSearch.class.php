@@ -77,6 +77,11 @@ class sfElasticSearch
         return $type->addDocument($doc);
     }
 
+    public static function deleteDocument($id, Elastica_Type $type)
+    {
+        return $type->deleteById($id);
+    }
+
     /**
      *
      * @param String $indexName
